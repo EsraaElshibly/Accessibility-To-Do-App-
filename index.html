@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list using Accesibility</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!---------- Start input for to-do list ---------->
+    <div class="container">
+        <section class="newItemEntry">
+            <form class="toDoItem">
+                <label for="newItem">Enter the New To do Item </label>
+                <input id="newItem" value="" type="text" placeholder="Add new item" tabindex="0" autocomplete="off" size="40"/>
+                <button id="submit" class="but" title="Add New Item" tabindex="0" onclick="addItem()" aria-label="Add Item for to do list"> + </button>
+                <p id="text"></p> 
+            </form>
+        </section>
+        <!---------- End input for to-do list ---------->
+    
+        <!------ Start Section for items for to-do list ------>
+        <section class="listContainer">
+            <div class="listTitile">
+                <h1>To Do List</h1>
+                <button id="clear" class="but" title="Clear the Item" tabindex="0" onclick="removeItem()" aria-label="Remove Item from to do list"> Clear </button> 
+            </div>
+            <hr />
+    
+            <div id="listItems" class="lists">
+                <ul></ul>
+            </div>
+        </section>
+        <!------ End Section for items for to-do list ------>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

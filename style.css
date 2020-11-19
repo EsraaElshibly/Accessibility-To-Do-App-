@@ -1,0 +1,62 @@
+body{ background-color: rgb(70, 127, 129)}
+
+/***** Start Style for input for to-do list ****/
+.container {
+    margin: 130px ;
+}
+
+.container .newItemEntry {height: 60px;}
+
+.container .newItemEntry,
+.container .listContainer {
+    background-color: rgb(220, 220, 220);
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220) ;
+    border-radius: 10px;
+}
+
+.container .newItemEntry .toDoItem label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .newItemEntry .toDoItem input {
+    width: 250px;
+    height: 25px;
+    padding: 3px;
+    border: 2px solid  rgb(209, 206, 206) ;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container .newItemEntry .toDoItem .but,
+.container .listContainer .but {
+    background-color: rgb(102, 174, 177);
+    height: 29px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+/***** End Style for input for to-do list ****/
+
+/***** Start Section for items for to-do list ****/
+.container .listContainer {
+    margin-top: 20px;
+}
+
+.container .listContainer h1 {
+    display: inline;
+    margin-right: 130px;
+}
+
+.container .listContainer .but {
+    background-color: indianred;
+}
+
+.container .listContainer .lists .inputCheck{
+    margin-left: 230px;
+    width: 30px;
+    height: 20px;
+}
+/***** End Section for items for to-do list ****/
